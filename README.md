@@ -1,4 +1,4 @@
-# servercow-dns-api
+# servercow-dns-api [![Build Status](https://travis-ci.org/jhartlep/servercow-dns-api.svg?branch=master)](https://travis-ci.org/jhartlep/servercow-dns-api)
 Custom DNS API script (host [Servercow](https://servercow.de)) for [acme.sh](https://github.com/Neilpang/acme.sh)
 
 # Prerequisites
