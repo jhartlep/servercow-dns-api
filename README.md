@@ -9,18 +9,18 @@ Before the very first run you need to export your DNS API username/password. The
     export SERVERCOW_API_Username=username
     export SERVERCOW_API_Password=password
 
+# Teststage
+
+Before issuing your productive certificates, it is a good idea to run acme.sh against the [staging server](https://letsencrypt.org/docs/staging-environment/). Simply add **--staging** to your call
+
+    acme.sh --staging --issue --dns dns_servercow -d example.com -d www.example.com
+
 # Usage
 Copy the script dns_servercow.sh to **~/.acme.sh** or **~/.acme.sh/dnsapi**.
 
 Then get you certificates with
 
     acme.sh --issue --dns dns_servercow -d example.com -d www.example.com
-
-# Teststage
-
-Before issuing your productive certificates, it is a good idea to run acme.sh against the (staging server)[https://letsencrypt.org/docs/staging-environment/]. Simply add **--staging** to your call
-
-    acme.sh --staging --issue --dns dns_servercow -d example.com -d www.example.com
 
 # Troubleshooting
 
