@@ -9,6 +9,12 @@ Before the very first run you need to export your DNS API username/password. The
     export SERVERCOW_API_Username=username
     export SERVERCOW_API_Password=password
 
+Moreover you need a CAA entry in your DNS like
+
+   www.example.com CAA 120 0 issue "letsencrypt.org"
+
+of your (sub)-domain(s).
+
 # Teststage
 
 Before issuing your productive certificates, it is a good idea to run acme.sh against the [staging server](https://letsencrypt.org/docs/staging-environment/). Simply add **--staging** to your call
