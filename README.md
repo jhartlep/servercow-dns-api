@@ -11,7 +11,7 @@ Before the very first run you need to export your DNS API username/password. The
 
 Moreover you need a CAA entry in your DNS like
 
-   www.example.com CAA 120 0 issue "letsencrypt.org"
+    www.example.com CAA 120 0 issue "letsencrypt.org"
 
 of your (sub)-domain(s).
 
