@@ -1,1 +1,24 @@
 language: shell
+
+os:
+  - linux
+
+services:
+  - docker
+
+env:
+  global:
+    - SHFMT_URL=https://github.com/mvdan/sh/releases/download/v2.1.0/shfmt_v2.1.0_linux_amd64
+
+addons:
+  apt:
+    sources:
+    - debian-sid
+    packages:
+    - shellcheck
+
+script:
+  - command -V openssl && openssl version
+
+matrix:
+  fast_finish: true
