@@ -1,5 +1,7 @@
 language: shell
 
+dist: xenial
+
 os:
   - linux
 
@@ -12,8 +14,6 @@ env:
 
 addons:
   apt:
-    sources:
-    - debian-sid
     packages:
     - shellcheck
 
